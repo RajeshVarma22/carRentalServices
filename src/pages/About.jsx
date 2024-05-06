@@ -5,8 +5,7 @@ import AboutSection from "../components/UI/AboutSection";
 import { Container, Row, Col } from "reactstrap";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 
-import driveImg from "../assets/all-images/drive.jpg";
-import OurMembers from "../components/UI/OurMembers";
+import driveImg from "../assets/all-images/cars-img/car interior.webp";
 import "../styles/about.css";
 
 const About = () => {
@@ -69,7 +68,6 @@ const About = () => {
               <h6 className="section__subtitle">Experts</h6>
               <h2 className="section__title">Our Members</h2>
             </Col>
-            <OurMembers />
           </Row>
         </Container>
       </section>

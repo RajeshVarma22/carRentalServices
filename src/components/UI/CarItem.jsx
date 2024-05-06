@@ -23,21 +23,38 @@ const CarItem = (props) => {
             <span className=" d-flex align-items-center gap-1">
               <i class="ri-car-line"></i> {model}
             </span>
-            <span className=" d-flex align-items-center gap-1">
+            {/* <span className=" d-flex align-items-center gap-1">
               <i class="ri-settings-2-line"></i> {automatic}
-            </span>
+            </span> */}
             <span className=" d-flex align-items-center gap-1">
               <i class="ri-timer-flash-line"></i> {speed}
             </span>
           </div>
 
-          <button className=" w-50 car__item-btn car__btn-rent">
-            <Link to={`/cars/${carName}`}>Rent</Link>
-          </button>
+          <div>
+            <button
+              className=" w-50 car__item-btn car__btn-details"
+              style={{
+                backgroundColor: "#269094",
+                boxShadow: "2px 2px 2px #ff5a00",
+                borderRadius: "15px",
+              }}
+            >
+              <Link to={`/cars/${carName}`}>Details</Link>
+            </button>
 
-          <button className=" w-50 car__item-btn car__btn-details">
-            <Link to={`/cars/${carName}`}>Details</Link>
-          </button>
+            <button
+              className=" w-50 car__item-btn car__btn-rent"
+              style={{
+                backgroundColor: "#ff5a00",
+                boxShadow: "2px 2px 2px #269094",
+                borderRadius: "15px",
+                // float:"right"
+              }}
+            >
+              <Link to={`/cars/${carName}`}>Rent</Link>
+            </button>
+          </div>
         </div>
       </div>
     </Col>

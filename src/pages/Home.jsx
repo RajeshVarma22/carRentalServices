@@ -11,6 +11,7 @@ import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 
 import "../styles/suitableCars.css";
 import "../styles/homeStylingDiff.css";
+import OurSuccess from "../components/UI/OurSuccess";
 
 const Home = () => {
   return (
@@ -54,35 +55,41 @@ const Home = () => {
             <Col lg="12" className="text-center mb-5">
               <div className="section__header">
                 <span className="section__subtitle">Exciting Deals Await</span>
-                <h1 className="section__title">Unlock Exclusive Offers on Premium cars Only</h1>
+                <h1 className="section__title">
+                  Unlock Exclusive Offers on Premium cars Only
+                </h1>
               </div>
             </Col>
 
-            {carData.slice(0, 6).map((item) => (
+            {carData.map((item) => (
               <CarItem item={item} key={item.id} />
             ))}
           </Row>
         </Container>
       </section>
 
+      {/* =========== Succeded section ================ */}
+      <OurSuccess />
       {/* =========== about section ================ */}
       <AboutSection />
+
+      {/* =========== become a driver section ============ */}
+      <BecomeDriverSection />
       {/* ========== services section ============ */}
       <section>
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">See our</h6>
-              <h2 className="section__title">Popular Services</h2>
+              <div className="section__header">
+                <h3 className="section__subtitle">Discover Our</h3>
+                <h1 className="section__title">Top-Rated Services</h1>
+              </div>
             </Col>
 
             <ServicesList />
           </Row>
         </Container>
       </section>
-
-      {/* =========== become a driver section ============ */}
-      <BecomeDriverSection />
     </>
   );
 };

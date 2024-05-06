@@ -1,5 +1,29 @@
-.footer{
+.footer {
   background: linear-gradient(45deg, salmon, red);
+  padding: 20px;
+  color: #fff;
+  .ft_sec_mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer__section-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    .footer__section-item {
+      color: #fff;
+      font: 300;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font: 300;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,6 +45,4 @@
   .footer__bottom p {
     font-size: 0.7rem;
   }
-
-  
 }
