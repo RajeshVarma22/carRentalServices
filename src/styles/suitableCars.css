@@ -1,0 +1,48 @@
+.hero__slider-section{
+    position: relative;
+}
+
+.suitableCar{
+    position: absolute;
+    bottom: -100px;
+    z-index: 11;
+    width: 100%;
+}
+
+.lstestModels{
+    background-color: #fff;
+    box-shadow: 2px 2px 2px black;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.latest_content_models{
+    background: linear-gradient(rgba(0, 0, 255, 0.43), rgb(18, 18, 184)),
+    url("../assets/all-images/cars-img/lastestDeals.jpg");
+    /* background-image: url("../assets/all-images/cars-img/lastestDeals.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.suitable_content{
+    height: 100%;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#latest_models_heading{
+    color: #ff6a00;
+}
+
+.suitable_content_2{
+    height: 100%;
+    display: flex;
+    color: #ff6a00;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
